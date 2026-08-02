@@ -12,15 +12,15 @@
     "platforms": {
       "steam": {
         "name": "Steam",
-        "url": "https://github.com/rokmakrofaj/ChunkPatch-Assets/releases/download/outlast-2-v1.0.0/outlast2-steam.zip"
+        "url": "https://github.com/rokmakrofaj/ChunkPatch-Assets/releases/download/outlast-2-v1.0.0/outlast-2-steam.zip"
       },
       "epic": {
         "name": "Epic Games",
-        "url": "https://github.com/rokmakrofaj/ChunkPatch-Assets/releases/download/outlast-2-v1.0.0/outlast2-epic.zip"
+        "url": "https://github.com/rokmakrofaj/ChunkPatch-Assets/releases/download/outlast-2-v1.0.0/outlast-2-epic.zip"
       },
       "xbox": {
         "name": "Xbox",
-        "url": "https://github.com/rokmakrofaj/ChunkPatch-Assets/releases/download/outlast-2-v1.0.0/outlast2-xbox.zip"
+        "url": "https://github.com/rokmakrofaj/ChunkPatch-Assets/releases/download/outlast-2-v1.0.0/outlast-2-xbox.zip"
       }
     }
   },
