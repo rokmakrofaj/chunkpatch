@@ -3,7 +3,7 @@
     "id": 414700,
     "slug": "outlast-2",
     "name": "Outlast 2",
-    "version": "1.1.0",
+    "version": "1.0.0",
     "cover": "https://steamcdn-a.akamaihd.net/steam/apps/414700/library_600x900.jpg",
     "bg": "https://steamcdn-a.akamaihd.net/steam/apps/414700/page_bg_generated_v6b.jpg",
     "description": "Oyunda, eşi Lynn ile birlikte çalışan bir kameraman olan Blake Langermann'a hayat vereceksin. İkiniz, kimsenin ele almaya cesaret edemediği hikâyeleri ortaya çıkarmak uğruna risk almaya ve olayların derinine inmeye istekli araştırmacı gazetecilersiniz.",
@@ -11,12 +11,15 @@
     "release_date": "2026-05-14",
     "platforms": {
       "steam": {
+        "name": "Steam",
         "url": "https://github.com/rokmakrofaj/ChunkPatch-Assets/releases/download/outlast-2-v1.0.0/outlast2-steam.zip"
       },
       "epic": {
+        "name": "Epic Games",
         "url": "https://github.com/rokmakrofaj/ChunkPatch-Assets/releases/download/outlast-2-v1.0.0/outlast2-epic.zip"
       },
       "xbox": {
+        "name": "Xbox",
         "url": "https://github.com/rokmakrofaj/ChunkPatch-Assets/releases/download/outlast-2-v1.0.0/outlast2-xbox.zip"
       }
     }
@@ -33,6 +36,7 @@
     "release_date": "2026-06-21",
     "platforms": {
       "steam": {
+        "name": "Steam",
         "url": "https://github.com/rokmakrofaj/ChunkPatch-Assets/releases/download/elden-ring-v1.0.4/elden-ring-steam.zip"
       }
     }
@@ -49,6 +53,7 @@
     "release_date": "2026-08-02",
     "platforms": {
       "steam": {
+        "name": "Steam",
         "url": "https://github.com/rokmakrofaj/ChunkPatch-Assets/releases/download/far-cry-5-v1.0.0/far-cry-5-steam.zip"
       }
     }
@@ -65,6 +70,7 @@
     "release_date": "2026-08-02",
     "platforms": {
       "steam": {
+        "name": "Steam",
         "url": "https://github.com/rokmakrofaj/ChunkPatch-Assets/releases/download/outlast-v1.0.0/outlast-steam.zip"
       }
     }
