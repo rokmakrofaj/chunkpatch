@@ -1,11 +1,11 @@
 {
-  "version": "0.1.2",
-  "notes": "Arayüz iyileştirmeleri, topluluk yamaları desteği ve Yükle butonu eklendi.",
-  "pub_date": "2026-08-07T12:00:00Z",
+  "version": "v0.1.2",
+  "notes": "Topluluk yamaları özellikleri geliştirildi, arayüz renkleri iyileştirildi, sürüm sistemi güncellendi.",
+  "pub_date": "2026-08-07T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
-      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTMjBLMmFJTDZmV2FGOHQ5UzlMdzdVVk1OZ1E4N0lSdTNEU09HVUZMUlJIcm1xWjJQNUl3ak02VVRHVENvamxmVmNNMUxxU21Fa0RPT0xGNnFMUm9BQTlSKzZCejNXa0E4PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2MDU2MTk3CWZpbGU6Q2h1bmtQYXRjaF8wLjEuMV94NjQtc2V0dXAuZXhlCmFlNG45ZGdGbThhMWlBbG9IbmNCU3NzUlcvTzlkbGcrL3J1MTVuREJCa2lkUzgwOW80V3YyUVhXRWw2aTdXQlRjZmNtVUJuT083QzkvU2xocTRaN0NRPT0K",
-      "url": "https://github.com/rokmakrofaj/chunkpatch/releases/download/v0.1.1/ChunkPatch_0.1.1_x64-setup.exe"
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTMjBLMmFJTDZmV1JmdEpoZXVwR2I3d3JKcWd4SzdsMlBsdlBqa0FaOGdHWlhxakpaVDJ0UWxqb2JYaUZkTTFSdkxndWkxY3Y3aXpqdlBDQU1NV1ppallLeFNBY25kcXdzPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2MDU5NDQ0CWZpbGU6Q2h1bmtQYXRjaF8wLjEuMl94NjQtc2V0dXAuZXhlCnV1bE56Wk5abGFpait3TkpzQ0pZaWl5QWJRbzhDQmpHTE56Z3EraWFZb3RFa1FSY1B2RVdVbEVZRDBVanNlNmt1WVRjSjJieHkvYWxHSVRkU2gwaUJ3PT0K",
+      "url": "https://github.com/rokmakrofaj/chunkpatch/releases/download/v0.1.2/ChunkPatch_0.1.2_x64-setup.exe"
     }
   }
 }
