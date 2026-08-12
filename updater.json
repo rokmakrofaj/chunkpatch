@@ -1,11 +1,11 @@
 {
-  "version": "v0.1.4",
-  "notes": "v0.1.4: Dinamik Kütüphane Taraması, Kusursuz Tam Ekran Uyumluluğu, Hızlandırılmış Sekme Geçişleri ve Arayüz Animasyon Cila Güncellemeleri",
-  "pub_date": "2026-08-12T00:00:00Z",
+  "version": "v0.1.5",
+  "notes": "v0.1.5: Sürüm Sağlığı Denetleyicisi, Windows Kurulum Sihirbazı İyileştirmeleri ve Kusursuz Cam Efekti Arayüz Cilası",
+  "pub_date": "2026-08-13T00:00:00Z",
   "platforms": {
     "windows-x86_64": {
       "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTMjBLMmFJTDZmV1RibkYvSEQ5aC83TUJhVitrelkxK0svQURKbCt1cFVOeHIyZURyZEZKSVJMdjJpaEM0V3VmQ0Rhc1ZzclczS3BuazZOYkJ3N3Fkcjcrc2ZRc0ZBa0FZPQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2NTczMzU3CWZpbGU6Q2h1bmtQYXRjaF8wLjEuNV94NjQtc2V0dXAuZXhlCnlBdS8xNnUyQWk0M1pRd1dXQVVXNnQ0WEFsUGlXMDN1bU5jdGJwVWVPSDhNVFVNM09uZmZEck1zUzZNb2psSEJDWE4ycTdrcnFUSHdiWXBkcTVrdkJnPT0K",
-      "url": "https://github.com/rokmakrofaj/chunkpatch/releases/download/v0.1.4/ChunkPatch_0.1.4_x64-setup.exe"
+      "url": "https://github.com/rokmakrofaj/chunkpatch/releases/download/v0.1.5/ChunkPatch_0.1.5_x64-setup.exe"
     }
   }
 }
