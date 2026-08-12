@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="src-tauri/icons/128x128.png" alt="ChunkPatch Logo" width="128" />
+  <img src="/128x128.png" alt="ChunkPatch Logo" width="128" />
   <h1>ChunkPatch</h1>
   <p><strong>Modern, Güvenilir ve Açık Kaynaklı Türkçe Yama Yöneticisi</strong></p>
 </div>
