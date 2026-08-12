@@ -34,6 +34,7 @@
     "description": "Altın Ağaç'ın gölgesinde, Aradaki Topraklar'da geçen destansı bir macera. Parçalanmış Elden Yüzüğü'nün parçalarını topla ve yeni Elden Lord'u sen ol. Hidetaka Miyazaki ve George R. R. Martin'in eşsiz kaleminden çıkan bu efsaneyi tamamen Türkçe deneyimle.",
     "translator": "Makrofaj Test",
     "release_date": "2026-06-21",
+    "supported_build_id": "123456",
     "platforms": {
       "steam": {
         "name": "Steam",
@@ -51,6 +52,7 @@
     "description": "Umut Kasabası'na hoş geldin! Liderliğini Joseph Seed ve onun sadık müritlerinin yaptığı kıyamet tarikatına karşı, kasaba halkıyla birlikte özgürlük için savaş. Bu uçsuz bucaksız açık dünyayı artık tamamen Türkçe keşfedebilirsin.",
     "translator": "Rock Türkçe",
     "release_date": "2026-08-02",
+    "supported_build_id": "552520_BUILD",
     "platforms": {
       "steam": {
         "name": "Steam",
@@ -68,6 +70,7 @@
     "description": "Cehennemin derinliklerinde geçen bu korku dolu macerada hayatta kalmaya çalış. Serbest gazeteci Miles Upshur olarak Mount Massive Akıl Hastanesine giriyor ve içerideki dehşeti kaydediyorsun. Hiçbir silahın yok, tek yapabileceğin kaçmak veya saklanmak.",
     "translator": "Makrofaj",
     "release_date": "2026-08-02",
+    "supported_build_id": "238320_BUILD",
     "platforms": {
       "steam": {
         "name": "Steam",
@@ -85,6 +88,7 @@
     "description": "Night City'nin tehlikeli sokaklarında geçen bu macerada Türkçe yamayı indirip hemen oynamaya başlayın.",
     "translator": "Makrofaj",
     "release_date": "2026-08-10",
+    "supported_build_id": "1091500_BUILD",
     "platforms": {
       "steam": {
         "name": "Steam",
@@ -102,6 +106,7 @@
     "description": "Vahşi batının en iyi Türkçe yama deneyimi.",
     "translator": "Makrofaj",
     "release_date": "2026-08-11",
+    "supported_build_id": "WARNING_TEST",
     "platforms": {
       "steam": {
         "name": "Steam",
@@ -119,6 +124,7 @@
     "description": "Ortaçağ atmosferini Türkçe alt yazılarla deneyimleyin.",
     "translator": "Makrofaj",
     "release_date": "2026-08-12",
+    "supported_build_id": "WARNING_TEST",
     "platforms": {
       "steam": {
         "name": "Steam",
