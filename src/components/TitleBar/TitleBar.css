@@ -1,0 +1,173 @@
+.titlebar {
+  height: 40px;
+  background-color: var(--color-chunk-bacground);
+  user-select: none;
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 9999;
+}
+
+.titlebar-search-container {
+  display: flex;
+  align-items: center;
+  margin-right: 16px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 6px;
+  padding: 4px 10px;
+  width: 200px;
+  transition: all 0.2s;
+  -webkit-app-region: no-drag;
+}
+
+.titlebar-search-container:focus-within {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-color: var(--color-primary);
+  width: 240px;
+}
+
+.titlebar-search-container svg {
+  width: 14px;
+  height: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-right: 8px;
+}
+
+.titlebar-search-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--color-white);
+  font-size: 12px;
+  font-family: inherit;
+  width: 100%;
+}
+
+.titlebar-search-input::placeholder {
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.titlebar-title-container {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 24px 0 16px;
+}
+
+.titlebar-nav {
+  display: flex;
+  height: 100%;
+  gap: 8px;
+  align-items: center;
+  padding-left: 16px;
+}
+
+.nav-item {
+  color: var(--color-chunk-text);
+  text-decoration: none;
+  font-family: 'Outfit', sans-serif !important;
+  font-size: 15px;
+  font-weight: var(--font-weight-header);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  opacity: 1;
+  transition: opacity 0.2s, background-color 0.2s;
+  position: relative;
+}
+
+.nav-item:hover {
+  opacity: 1;
+  color: var(--color-chunk-text);
+  background-color: rgba(0, 0, 0, 0.03);
+}
+
+.nav-item.active {
+  opacity: 1;
+  color: var(--color-chunk-text);
+}
+
+.nav-item.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 16px;
+  background-color: var(--color-primary);
+  border-radius: 4px;
+}
+
+.titlebar-drag-spacer {
+  flex: 1;
+  height: 100%;
+}
+
+.titlebar-actions {
+  display: flex;
+  height: 100%;
+}
+
+.titlebar-button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  color: var(--color-chunk-text);
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.2s, color 0.2s;
+  position: relative;
+  border-radius: 4px;
+}
+
+.titlebar-button.active {
+  color: var(--color-chunk-text);
+}
+
+.titlebar-button.active::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4px;
+  height: 16px;
+  background-color: var(--color-primary);
+  border-radius: 4px;
+}
+
+.titlebar-button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--color-chunk-text);
+}
+
+.titlebar-button-close:hover {
+  background-color: #c9303d;
+  color: white;
+}
+
+.logo-item { display: flex; align-items: center; font-weight: 800; font-size: 15px; position: relative; } 
+.logo-item.active::before { display: none; } /* Hide the default vertical pill */
+.nav-logo { position: absolute; left: -10px; width: 18px; height: 18px; color: var(--color-primary); opacity: 0; transition: opacity 0.2s ease, transform 0.2s ease; transform: translateX(-4px); }
+.logo-item.active .nav-logo { opacity: 1; transform: translateX(0); }
+
+/* Settings Icon Animation */
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.titlebar-button[title="Ayarlar"] svg {
+  transition: transform 0.3s;
+}
+
+.titlebar-button[title="Ayarlar"]:hover svg {
+  animation: spin 3s linear infinite;
+}

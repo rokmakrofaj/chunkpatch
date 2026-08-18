@@ -1,0 +1,73 @@
+:root {
+  --color-chunk-bacground: #c2bab3;
+  --color-chunk-text: #191919;
+  --color-main-bg: #ded7cd;
+  --font-primary: "Outfit", system-ui, sans-serif;
+  --text-2xl: 1.5rem;
+  --font-weight-bold: 800;
+  --font-weight-header: 800;
+  --color-primary: #ffac00;
+  --color-primary-hover: #e69c00;
+  --color-success: #4CAF50;
+  --color-success-hover: #45a049;
+  --color-warning: #f39c12;
+  --color-warning-hover: #e67e22;
+  --color-danger: #e74c3c;
+  --color-danger-hover: #c0392b;
+  --color-white: #ffffff;
+}
+
+body {
+  font-family: var(--font-primary);
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Zorunlu Global Font Eşitlemesi: Başlıklar, butonlar ve yazılar dahil HER ŞEY aynı font olacak */
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h1, h2, h3, h4, h5, h6, 
+p, span, a, div, button, input, textarea, select, label {
+  font-family: var(--font-primary) !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-header) !important;
+}
+
+/* Global Skeleton Loader */
+.skeleton-base {
+  background: rgba(255, 255, 255, 0.05);
+  position: relative;
+  overflow: hidden;
+  box-shadow: none !important;
+  cursor: default !important;
+  transform: none !important;
+  border-radius: 12px;
+}
+
+.skeleton-base::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.08),
+    transparent
+  );
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  100% {
+    left: 200%;
+  }
+}

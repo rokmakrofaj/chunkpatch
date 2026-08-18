@@ -1,0 +1,15 @@
+CHUNKPATCH - OTOMATİK TÜRKÇE YAMA YÖNETİCİSİ
+
+Kurulum Sihirbazına Hoş Geldiniz!
+
+ChunkPatch, favori PC oyunlarınızı (Steam, Epic Games) otomatik olarak tarayan ve uyumlu Türkçe yamaları tek tıkla kurmanızı sağlayan tamamen ücretsiz ve topluluk odaklı bir araçtır.
+
+ÖNEMLİ BİLGİLER:
+1. Kurulum: ChunkPatch, yama dosyalarını güvenli sunuculardan indirir ve doğrudan oyun dizinine entegre eder.
+2. Sorumluluk Reddi: Yamaların oyunun mevcut sürümüyle uyumluluğu, yama yapımcılarına bağlıdır. Olası sorunlara karşı oyun dosyalarınızın yedeğini almanız tavsiye edilir.
+3. Açık Kaynak: Bu proje tamamen şeffaf ve açık kaynak kodludur. Destek olmak veya yama göndermek için GitHub sayfamızı ziyaret edebilirsiniz.
+
+ChunkPatch'i tercih ettiğiniz için teşekkür ederiz. 
+Kuruluma devam etmek için "Kabul Ediyorum" butonuna tıklayabilirsiniz.
+
+İyi oyunlar!
