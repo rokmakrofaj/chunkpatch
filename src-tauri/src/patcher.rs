@@ -40,6 +40,19 @@ pub fn check_patch_status(install_path: String) -> Option<String> {
 
 #[command]
 pub fn download_and_install_patch(url: String, install_path: String, version: String) -> Result<String, String> {
+    // Güvenlik: Sadece güvenilir kaynaklardan indirmeye izin ver
+    let allowed_hosts = ["github.com", "raw.githubusercontent.com", "objects.githubusercontent.com"];
+    let parsed_url = url::Url::parse(&url)
+        .map_err(|_| "Geçersiz URL formatı".to_string())?;
+    let host = parsed_url.host_str()
+        .ok_or_else(|| "URL'de host bulunamadı".to_string())?;
+    if !allowed_hosts.iter().any(|&allowed| host == allowed || host.ends_with(&format!(".{}", allowed))) {
+        return Err(format!("Güvenlik: '{}' güvenilir bir kaynak değil", host));
+    }
+    if parsed_url.scheme() != "https" {
+        return Err("Güvenlik: Sadece HTTPS bağlantıları kabul edilir".to_string());
+    }
+
     let install_dir = PathBuf::from(&install_path);
     if !install_dir.exists() {
         return Err(format!("Oyun klasörü bulunamadı: {}", install_path));
@@ -50,9 +63,22 @@ pub fn download_and_install_patch(url: String, install_path: String, version: St
     // Download the ZIP file
     let response = reqwest::blocking::get(&url)
         .map_err(|e| format!("İndirme hatası: {}", e))?;
+    
+    // Güvenlik: İndirme boyutu kontrolü (maks 500MB)
+    const MAX_DOWNLOAD_SIZE: u64 = 500 * 1024 * 1024;
+    if let Some(content_length) = response.content_length() {
+        if content_length > MAX_DOWNLOAD_SIZE {
+            return Err(format!("Dosya çok büyük: {} bytes (maksimum: {} bytes)", content_length, MAX_DOWNLOAD_SIZE));
+        }
+    }
         
     let bytes = response.bytes()
         .map_err(|e| format!("Dosya okuma hatası: {}", e))?;
+    
+    // Belleğe yüklenen boyutu da kontrol et
+    if bytes.len() as u64 > MAX_DOWNLOAD_SIZE {
+        return Err(format!("İndirilen dosya çok büyük: {} bytes", bytes.len()));
+    }
         
     let reader = Cursor::new(bytes);
     let mut archive = zip::ZipArchive::new(reader)
@@ -61,13 +87,23 @@ pub fn download_and_install_patch(url: String, install_path: String, version: St
     let mut extracted_count = 0;
     
     for i in 0..archive.len() {
-        let mut file = archive.by_index(i).unwrap();
+        let mut file = archive.by_index(i)
+            .map_err(|e| format!("Zip dosya okuma hatası: {}", e))?;
         let outpath = match file.enclosed_name() {
             Some(path) => install_dir.join(path),
             None => continue,
         };
         
-        let relative_path = file.enclosed_name().unwrap().to_owned();
+        let relative_path = match file.enclosed_name() {
+            Some(path) => path.to_owned(),
+            None => continue,
+        };
+
+        // Güvenlik: Path traversal kontrolü
+        if relative_path.components().any(|c| matches!(c, std::path::Component::ParentDir)) {
+            eprintln!("Güvenlik uyarısı: Dizin dışı dosya atlandı: {:?}", relative_path);
+            continue;
+        }
 
         if file.is_dir() {
             // It's a directory

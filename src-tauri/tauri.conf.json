@@ -21,7 +21,7 @@
       }
     ],
     "security": {
-      "csp": null
+      "csp": "default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://steamcdn-a.akamaihd.net https://raw.githubusercontent.com data:; connect-src 'self' https://raw.githubusercontent.com https://api.github.com ipc: http://ipc.localhost"
     }
   },
   "plugins": {

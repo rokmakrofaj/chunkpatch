@@ -20,6 +20,7 @@ export default function Backups() {
   const navigate = useNavigate();
   const [backups, setBackups] = useState<BackupItem[]>([]);
   const [loadingBackups, setLoadingBackups] = useState(true);
+  const [errorMessage, setErrorMessage] = useState<string | null>(null);
 
   useEffect(() => {
     async function loadBackups() {
@@ -50,7 +51,7 @@ export default function Backups() {
       await invoke('delete_backup', { installPath });
       setBackups(prev => prev.filter(b => b.install_path !== installPath));
     } catch (e) {
-      alert("Hata: " + e);
+      setErrorMessage("Yedek silinirken hata oluştu: " + String(e));
     }
   };
   
@@ -81,6 +82,12 @@ export default function Backups() {
           </p>
         </div>
       </div>
+
+      {errorMessage && (
+        <div style={{ padding: '12px 24px', margin: '0 24px', background: 'rgba(255,60,60,0.15)', borderRadius: '8px', color: '#ff6b6b', fontSize: '14px' }}>
+          {errorMessage}
+        </div>
+      )}
 
       <div className="backups-content">
         {loadingBackups ? (

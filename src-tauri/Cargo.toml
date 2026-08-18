@@ -1,8 +1,8 @@
 [package]
 name = "chunkpatch"
 version = "0.1.4"
-description = "A Tauri App"
-authors = ["you"]
+description = "Modern Türkçe Yama Yöneticisi - Tauri tabanlı masaüstü uygulaması"
+authors = ["ChunkPatch Team"]
 edition = "2021"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -27,4 +27,5 @@ reqwest = { version = "0.12", features = ["blocking", "json"] }
 zip = "2.2.0"
 tauri-plugin-updater = "2.10.1"
 tauri-plugin-process = "2.3.1"
+url = "2"
 

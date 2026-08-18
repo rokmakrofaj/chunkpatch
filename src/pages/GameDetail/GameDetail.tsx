@@ -129,13 +129,13 @@ export default function GameDetail() {
       }
     } catch (e) {
       console.error("Failed to launch game:", e);
-      alert("Oyunu başlatırken bir hata oluştu.");
+      setStatusMessage("Oyunu başlatırken bir hata oluştu.");
     }
   };
 
   const handleInstallPatch = async () => {
     if (!patchUrl || !currentGame?.install_path || !patchVersion) {
-      alert("Kurulum yolu veya yama bilgisi bulunamadı!");
+      setStatusMessage("Kurulum yolu veya yama bilgisi bulunamadı!");
       return;
     }
     setPatchStatus('working');
@@ -150,10 +150,9 @@ export default function GameDetail() {
       setPatchStatus('idle');
       setIsInstalled(true);
       setInstalledVersion(patchVersion);
-    } catch(e: any) {
-      alert("Kurulum hatası: " + e);
+    } catch(e: unknown) {
+      setStatusMessage("Kurulum hatası: " + String(e));
       setPatchStatus('idle');
-      setStatusMessage('');
     }
   };
 
@@ -169,10 +168,9 @@ export default function GameDetail() {
       setPatchStatus('idle');
       setIsInstalled(false);
       setInstalledVersion(null);
-    } catch(e: any) {
-      alert("Silme hatası: " + e);
+    } catch(e: unknown) {
+      setStatusMessage("Silme hatası: " + String(e));
       setPatchStatus('idle');
-      setStatusMessage('');
     }
   };
 
