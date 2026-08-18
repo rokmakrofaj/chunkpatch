@@ -1,0 +1,11 @@
+{
+  "version": "v0.1.5",
+  "notes": "v0.1.5: Sürüm Sağlığı Denetleyicisi, Windows Kurulum Sihirbazı İyileştirmeleri ve Kusursuz Cam Efekti Arayüz Cilası",
+  "pub_date": "2026-08-13T00:00:00Z",
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "dW50cnVzdGVkIGNvbW1lbnQ6IHNpZ25hdHVyZSBmcm9tIHRhdXJpIHNlY3JldCBrZXkKUlVTMjBLMmFJTDZmV1hmTHBBSFU0Z0N6cXJCaXo5WUxyQXRTUUZVbENDZS91ZUtuN1BpS3hzcHdIREg2Vno4YUlZbmZucjBncXQwU2RqQzYraVR1eVFxb01GYytjS0VuNFE0PQp0cnVzdGVkIGNvbW1lbnQ6IHRpbWVzdGFtcDoxNzg2NTc0MTEwCWZpbGU6Q2h1bmtQYXRjaF8wLjEuNV94NjQtc2V0dXAuZXhlCmVMRTd4bjN1WVNBeCs3MGhBRWpYUXIzYXNWK3l3TGIzRHBkdEVxN1Z6NmFxc2FjTEFxY0lpV3QwZzRLY0lSSkMxeGJWNXdJZjZsak9UM2NIUkZaMkNRPT0K",
+      "url": "https://github.com/rokmakrofaj/chunkpatch/releases/download/v0.1.5/ChunkPatch_0.1.5_x64-setup.exe"
+    }
+  }
+}

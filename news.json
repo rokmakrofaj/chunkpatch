@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Sürüm Sağlığı ve Dev UI Cilası: v0.1.5 Yayında! 🚀",
+    "content": "Oyunlarınızın yamalarla uyumlu olup olmadığını otomatik denetleyen 'Sürüm Sağlığı Denetleyicisi' eklendi! Ayrıca Windows kurulum sihirbazı profesyonelleştirildi ve uygulama içi cam efekti (glassmorphism), buton hizalamaları ve tasarım detayları kusursuzlaştırıldı.",
+    "category": "GÜNCELLEME",
+    "date": "2026-08-13",
+    "image": "https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "title": "Büyük Güncelleme: v0.1.4 Yayında!",
+    "content": "Steam ve Epic Games için tam otomatik dinamik oyun taraması eklendi. Ayrıca kusursuz tam ekran (responsive) uyumluluğu, hızlandırılmış sekmeler ve piksel mükemmelliğinde arayüz animasyonları ile şimdiye kadarki en iyi ChunkPatch deneyimi sizi bekliyor.",
+    "category": "GÜNCELLEME",
+    "date": "2026-08-12",
+    "image": "https://images.unsplash.com/photo-1538481199705-c710c4e965fc?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "title": "Topluluk Yamaları Sistemi Yayında!",
+    "content": "Artık herkes kendi yaptığı Türkçe yamaları GitHub üzerinden bize gönderebilecek. Onaylanan yamalar anında programda listelenecek!",
+    "category": "DUYURU",
+    "date": "2026-08-04",
+    "image": "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "title": "Yeni Güncelleme Çıktı: v1.1.0",
+    "content": "Uygulama arayüzünde büyük tasarım değişikliklerine gidildi. Daha modern, daha hızlı ve çok daha şık bir arayüz sizi bekliyor.",
+    "category": "GÜNCELLEME",
+    "date": "2026-08-02",
+    "image": ""
+  }
+]
